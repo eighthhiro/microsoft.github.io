@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+    <link rel="icon" href="./mc logo.png" type="image/x-icon">
+        <style>
+            :root{
+                --link: rgb(0, 0, 182);
+            }
+            body{
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                background: #1f1f1f;
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+            .hero {
+                position: absolute;
+                top: -3.3vh;
+                left: 15%;
+            }
+            .header{
+                width: 68vw;
+                height: 11vh;
+                background: #fff;
+                position: relative;
+            }
+            .nav{
+                width: 68vw;
+                height: 4.5vh;
+                background: rgb(72, 143, 201);
+                border-top: 1px solid #fff;
+                font-weight: 700;
+            }
+            .head{
+                width: 15.5vw;
+                height: 100%;
+                background:rgb(72, 143, 201);
+                position: relative;
+                top: 0;
+            }
+            .head .text h1{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                letter-spacing: -2px;
+                margin-left: 0.5rem;
+                position: relative;
+                top: 1vh;
+                color: #fff;
+                font-weight: 300;
+            }
+            #Home{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                letter-spacing: 1px;
+                margin-left: 10.3vw;
+                position: relative;
+                font-size: 1.2rem;
+                color: #fff;
+                font-weight: 300;
+                top: -4vh;
+            }
+            .nav ul{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                letter-spacing: 0.85px;
+                position: relative;
+                display: flex;
+                font-size: 0.75rem;
+                color: #fff;
+                font-weight: 700;
+                top: -5px;
+                left: -40px;
+            }
+            .nav ul li
+            {
+                position: relative;
+                list-style: none;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .header img{
+                position: relative;
+                top: -10vh;
+                left: 34.5vh;
+                scale: 1.25;
+            }
+            .page{
+                position: absolute;
+                width: 68vw;
+                background: #fff;
+            }
+            .side{
+                position: relative;
+                top: -2.5vh;
+                height: 85vh;
+                width: 17vw;
+                border-right: 2px solid rgb(206, 93, 0);
+            }
+            .side img{
+                scale: 0.3;
+                position: fixed;
+                background-color: rgb(20, 170, 230);
+                padding: 23px 23px 23px;
+                top: 10vh;
+                left: 12.2vw;
+            }
+            .exp {
+                position: relative;
+                left: 70px;
+                top: 21px;
+            }
+            .exp a{
+                position: absolute;
+                top: 0;
+                color: var(--link);
+            }
+            #free{
+                position: absolute;
+                top: 0;
+                left: 70px;
+            }
+            .side-text{
+                position: relative;
+                top: 6vh;
+                left: -25px;
+            }
+            .side-text a{
+                color: var(--link);
+            }
+            .side-text ul li{
+                font-size: 14px;
+                list-style-type: none;
+                margin-top: -1.5px;
+            }
+            #b{
+                letter-spacing: 1px;
+            }
+            #b::before{
+                content: "■";
+                color: var(--link);
+            }
+            #links{
+                color: var(--link);
+                margin-left: -32px;
+            }
+            .main{
+                position: absolute;
+                height: 85vh;
+                width: 41.7vw;
+                top: 0;
+                left: 17.2vw;
+            }
+            .main1{
+                height: 28vh;
+                width: 41.7vw;
+                position: relative;
+            }
+            .main2{
+                height: 30vh;
+                width: 41.7vw;
+                position: relative;
+            }
+            .main3{
+                height: 28vh;
+                width: 41.7vw;
+                position: relative;
+            }
+            hr {
+                width: 40vw;
+                height: 1px;
+                border-width:0;
+                background-color:rgba(128, 128, 128, 0.534);
+            }
+            .main1 img{
+                scale: 0.45;
+                margin-left: -6vw;
+                margin-top: -3.5vh;
+            }
+            #gr{
+                width: 87px;
+                height: 2px;
+                background-color: rgba(38, 194, 38, 0.856);
+                position: absolute;
+                top: 11vh;
+                left: 15px;
+            }
+            .main1 h1{
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                position: absolute;
+                top: 10.5vh;
+                letter-spacing: 0px;
+                left: 15px;
+                color: rgba(10, 46, 204, 0.774);
+                font-weight: 100;
+            }
+            .main1 h1 span{
+                color: rgba(255, 68, 0, 0.795);
+            }
+            .main1 a{
+                position: absolute;
+                top: 20px;
+                left: 14vw;
+                color: var(--link);
+                font-size: 17px;
+                font-weight: 600;
+            }
+            .main1 p{
+                position: absolute;
+                top: 30px;
+                left: 14vw;
+                width: 28vw;
+            }
+            .left ul li{
+                list-style-type: none;
+                padding-bottom: 40px;
+                margin-top: -10px;
+                margin-left: -10px;
+                width: 17.5vw;
+            }
+            .left ul li::before{
+                content: "■";
+                color: var(--link);
+                position: relative;
+                left: -20px;
+            }
+            .left a{
+                color: var(--link);
+                font-size: 15px;
+                font-weight: 600;
+                left: -15px;
+                top: 0;
+                padding-bottom: 30px;
+                position: relative;
+            }
+            .right ul{
+                position: absolute;
+                top: 0;
+                left: 20vw;
+            }
+            .right ul li{
+                list-style-type: none;
+                padding-bottom: 47px;
+                margin-top: -17px;
+                width: 17.5vw;
+                position: relative;
+            }
+            .right ul li::before{
+                content: "■";
+                color: var(--link);
+                position: relative;
+                left: -20px;
+            }
+            .right a{
+                color: var(--link);
+                font-size: 15px;
+                font-weight: 600;
+                left: -15px;
+                top: 0;
+                position: relative;
+            }
+            .mainl{
+                position: absolute;
+                top: 0.5vh;
+                left: 1.5vh;
+            }
+            .mainl a{
+                color: var(--link);
+                position: relative;
+            }
+            .mainr #Warn{
+                width: 200px;
+                font-weight: 400;
+                position: absolute;
+                top: -15px;
+                right: 70px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .mainr img{
+                position: absolute;
+                top: 12vh;
+                right: 9vw;
+            }
+            .mainr #rr{
+                position: absolute;
+                top: -2vh;
+                right: 0;
+                width: 115px;
+                font-size: 14px;
+            }
+            .mainr #bottom{
+                position: absolute;
+                top: 12vh;
+                right: -2vw;
+                width: 300px;
+                font-size: 14px;
+            }
+    </style>
+</head>
+<body>
+<div class="hero">
+    <div class="header">
+        <div class="head">
+            <div class="text">
+                <h1><b>microsoft</b>.com</h1>
+                <h3 id="Home">Home</h3>
+            </div>
+        </div>
+        <img src="./Girl.png">
+    </div>
+    <div class="nav">
+        <ul>
+        <li> Home </li> <li>|</li>
+        <li> Events</li> <li>|</li>
+        <li> Training</li> <li>|</li>
+        <li> Downloads</li> <li>|</li>
+        <li> Newsletters</li> <li>|</li>
+        <li> U.S. & International</li> <li>|</li>
+        <li> About our Site</li> <li>|</li>
+        </ul>
+    </div>
+    <div class="page">
+        <div class="side">
+            <img src="./ex logo.png">
+            <div class="exp">
+            <p>Internet Explorer</p>
+            <a href=""><p>Download</p></a><p id="free">it free!</p>
+            </div>
+            <div class="side-text">
+                <ul>
+                    <li id="b"><b>Product Families</b></li>
+                    <ul id="links">
+                        <li><a href="">BackOffice</a></li>
+                        <li><a href="">Developer Tools</a></li>
+                        <li><a href="">Office</a></li>
+                        <li><a href="">MSN</a></li>
+                        <li><a href="">Windows</a></li>
+                    </ul>
+                    <br>
+                    <li id="b"><b>Business Solutions</b></li>
+                    <ul id="links">
+                        <li><a href="">Industries</a></li>
+                        <li><a href="">Small Business</a></li>
+                    </ul>
+                    <br>
+                    <li id="b"><b>Developers</b></li>
+                    <ul id="links">
+                        <li><a href="">Software Developers</a></li>
+                        <li><a href="">Web Site Builders</a></li>
+                    </ul>
+                    <br>
+                    <li id="b"><b>Education</b></li>
+                    <ul id="links">
+                        <li><a href="">Academic Products</a></li>
+                        <li><a href="">Education Resellers</a></li>
+                        <li><a href="">Higher Education</a></li>
+                        <li><a href="">K-12 Education</a></li>
+                    </ul>
+                    <br>
+                    <li id="b"><b>IT Professionals</b></li>
+                    <ul id="links">
+                        <li><a href="">Digital Nervous System</a></li>
+                        <li><a href="">IT Professionals/Execs</a></li>
+                        <li><a href="">Solution Providers</a></li>
+                        <li><a href="">Year 2000</a></li>
+                    </ul>
+                    <br>
+                    <li id="b"><b>Partners & Resellers</b></li>
+                    <ul id="links">
+                        <li><a href="">Becoming a Partner</a></li>
+                        <li><a href="">Find a Services Partner</a></li>
+                        <li><a href="">Resellers Consultants</a></li>
+                    </ul>
+                    <br>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+        <div class="main1">
+            <img src="./Microsoft office.png">
+            <hr id="gr">
+            <h1> Team Web <span>Tour</span></h1>
+            <a href=""">Team Web Tour Brings Office 2000 to You</a>
+            <p>Extended by popular demand, the Office 2000 Team Web Tour will visit additional cities between January and March. See how Office 2000 will make it easy for you to use the Web to streamline information sharing and collaboration, enhance data access and analysis, and get everyday tasks done easier than ever before.</p>
+        </div>
+        <hr>
+        <div class="main2">
+            <div class="left">
+                <ul>
+                <li><a href="">Anti-trust Trial:Microsoft Mounts Its Defense</a></li>
+                <li><a href="">See Retailers and Partners in Action Jan.17-20 in New York</a></li>
+                <li><a href="">Squashing the April 2001 Bug in Visual C++</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                <li><a href="">MSN Expedia Deals: A Boon for Consumers and Travel Suppliers</a></li>
+                <li><a href="">Order the SQL Server 7.0 Evaluation Edition Now</a></li>
+                <li><a href="">Sample More than 10 Microsoft Products, All on One CD-ROM</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="main3">
+            <div class="mainl">
+                <a href="">Free Downloads</a> <br>
+                <p></p>
+                <a href="">Jobs at Microsoft</a>
+                <p><a href="">Subscribe</a> to our newsletter</p>
+            </div>
+            <div class="mainr">
+                <p id="Warn">WARNING TO USERS <br>OF OUTLOOK <br>EXPRESS 5 BETA</p>
+                <img src="./line.png">
+                <p id="rr">Users are <br>advised that Outlook Express comes equipped with a 'junk' mail filter which,</p>
+                <p id="bottom">when turned on, may relegate <br> legitimate e-mails, such as electronic <br> greeting cards from family or friends.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
